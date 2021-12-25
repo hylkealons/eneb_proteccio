@@ -1,0 +1,13 @@
+{
+  "name": "ENEB Proteccio remover",
+  "description": "Removes the proteccio",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://*.eneb.com/login/proteccio.php*"],
+      "js": ["refresh.js"],
+      "run_at": "document_start"
+    }
+  ]
+ }
